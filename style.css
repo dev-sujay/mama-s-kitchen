@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+
+}
+
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+
+}
+
+/* navbar: logo and image */
+
+.logo {
+    margin: 10px 30px;
+
+}
+
+.logo img {
+    height: 88px;
+    margin: 10px 10px;
+
+}
+
+/* navbar: list */
+
+#navbar ul {
+    display: flex;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+
+
+}
+
+/* home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+#home::before {
+    content: "";
+    background: url(clients.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+/* services */
+
+#services {
+    margin: 33px;
+    display: flex;
+    background-image: url(bg5.jpg);
+
+
+
+}
+
+.services-container .h-primary {
+    margin-top: 80px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 24px;
+    background-color: rgb(230, 238, 245);
+
+}
+
+#services .box img {
+    height: 220px;
+    display: block;
+    margin: auto;
+}
+
+
+
+/* client section */
+
+#client-section {
+    height: 340px;
+    position: relative;
+    background: url(homebg.jpg) center center/cover;
+
+
+}
+
+#client-section h1 {
+    color: #318fe1;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    opacity: 1;
+    z-index: -1;
+}
+
+#clients img {
+    height: 130px;
+}
+
+
+.client-items {
+    padding: 15px;
+}
+
+
+
+/* contact-section */
+
+#contact {
+    position: relative;
+    background: url(bg.jpg) no-repeat center center/cover;
+}
+
+#contact::before {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+
+}
+
+#contact-box {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    padding: 10px;
+    margin: 2px;
+    border: 10px solid antiquewhite;
+
+}
+
+i,
+select {
+    padding: 10px;
+    margin: 2px;
+}
+
+.input.state {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+
+#name,
+#email,
+#number,
+#messege,
+#state {
+
+    border: 5px solid lightcoral;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* utility class */
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 20px;
+    margin-top: 0px;
+
+}
+
+.h-secondary {
+    padding: 12px;
+    font-size: 1.8rem;
+}
+
+.btn {
+    padding: 6px 20px;
+    margin: 20px;
+    border: 2px solid white;
+    background-color: rgba(71, 30, 30, 0.384);
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+
